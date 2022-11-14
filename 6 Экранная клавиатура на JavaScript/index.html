@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Экранная клавиатура на JavaScript</title>
+    <link rel="stylesheet" href="../6 Экранная клавиатура на JavaScript/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="display">
+                <textarea rows="15" cols="50"></textarea>
+            </div>
+            <div class="mainKeyBoard">
+                <div class="mainKeyBoard-rowLeft">
+                    <div class="mainKeyBoard-rowLeft_one">
+                        <button attr=left class="left-num1">Esc</button>
+                        <button attr=left class="left-num2">F1</button>
+                        <button attr=left class="left-num3">F2</button>
+                        <button attr=left class="left-num4">F3</button>
+                        <button attr=left class="left-num5">F4</button>
+                        <button attr=left class="left-num6">F5</button>
+                        <button attr=left class="left-num7">F6</button>
+                        <button attr=left class="left-num8">F7</button>
+                        <button attr=left class="left-num9">F8</button>
+                        <button attr=left class="left-num10">F9</button>
+                        <button attr=left class="left-num11">F10</button>
+                        <button attr=left class="left-num12">F11</button>
+                        <button attr=left class="left-num13">F12</button>  
+                    </div>
+
+                    <div class="mainKeyBoard-rowLeft_two">
+                        <button attr=left class="left-num1"><span class="ru">`</span><span class="second">~</span></button>
+                        <button attr=left class="left-num2"><span class="ru">1</span><span class="second">!</span></button>
+                        <button attr=left class="left-num3"><span class="ru">2</span><span class="second">@</span></button>
+                        <button attr=left class="left-num4"><span class="ru">3</span><span class="second">#</span></button>
+                        <button attr=left class="left-num5"><span class="ru">4</span><span class="second">$</span></button>
+                        <button attr=left class="left-num6"><span class="ru">5</span><span class="second">%</span></button>
+                        <button attr=left class="left-num7"><span class="ru">6</span><span class="second">^</span></button>
+                        <button attr=left class="left-num8"><span class="ru">7</span><span class="second">&</span></button>
+                        <button attr=left class="left-num9"><span class="ru">8</span><span class="second">*</span></button>
+                        <button attr=left class="left-num10"><span class="ru">9</span><span class="second">(</span></button>
+                        <button attr=left class="left-num11"><span class="ru">0</span><span class="second">)</span></button>
+                        <button attr=left class="left-num12"><span class="ru">-</span><span class="second">_</span></button>
+                        <button attr=left class="left-num13"><span class="ru">=</span><span class="second">+</span></button>
+                        <button attr=left class="left-num14 DEL">&larr;</button>
+                    </div>
+                    <div class="mainKeyBoard-rowLeft_three">
+                        <button attr=left class="left-num1 TAB">TAB</button>
+                        <button attr=left class="left-num2"><span class="ru">Й</span><span class="second">Q</span></button>
+                        <button attr=left class="left-num3"><span class="ru">Ц</span><span class="second">W</span></button>
+                        <button attr=left class="left-num4"><span class="ru">У</span><span class="second">E</span></button>
+                        <button attr=left class="left-num5"><span class="ru">К</span><span class="second">R</span></button>
+                        <button attr=left class="left-num6"><span class="ru">Е</span><span class="second">T</span></button>
+                        <button attr=left class="left-num7"><span class="ru">Н</span><span class="second">Y</span></button>
+                        <button attr=left class="left-num8"><span class="ru">Г</span><span class="second">U</span></button>
+                        <button attr=left class="left-num9"><span class="ru">Ш</span><span class="second">I</span></button>
+                        <button attr=left class="left-num10"><span class="ru">Щ</span><span class="second">O</span></button>
+                        <button attr=left class="left-num11"><span class="ru">З</span><span class="second">P</span></button>
+                        <button attr=left class="left-num12"><span class="ru">Х</span><span class="second">{ [</span></button>
+                        <button attr=left class="left-num13"><span class="ru">Ъ</span><span class="second">] }</span></button>
+                        <button attr=left class="left-num14"><span class="ru">\</span><span class="second">|</span></button>
+                    </div>
+                    <div class="mainKeyBoard-rowLeft_four">
+                        <button attr=left class="left-num1 CAP">CAPSLK</button>
+                        <button attr=left class="left-num2"><span class="ru">Ф</span><span class="second">A</span></button>
+                        <button attr=left class="left-num3"><span class="ru">Ы</span><span class="second">S</span></button>
+                        <button attr=left class="left-num4"><span class="ru">В</span><span class="second">D</span></button>
+                        <button attr=left class="left-num5"><span class="ru">А</span><span class="second">F</span></button>
+                        <button attr=left class="left-num6"><span class="ru">П</span><span class="second">G</span></button>
+                        <button attr=left class="left-num7"><span class="ru">Р</span><span class="second">H</span></button>
+                        <button attr=left class="left-num8"><span class="ru">О</span><span class="second">J</span></button>
+                        <button attr=left class="left-num9"><span class="ru">Л</span><span class="second">K</span></button>
+                        <button attr=left class="left-num10"><span class="ru">Д</span><span class="second">L</span></button>
+                        <button attr=left class="left-num11"><span class="ru">Ж</span><span class="second">; :</span></button>
+                        <button attr=left class="left-num12"><span class="ru">Э</span><span class="second">' "</span></button>
+                        <button attr=left class="left-num13 ENTER">ENTER</button>
+                        
+                    </div>
+                    <div class="mainKeyBoard-rowLeft_five">
+                        <button attr=left class="left-num1 SHIFT">SHIFT</button>
+                        <button attr=left class="left-num2"><span class="ru">Я</span><span class="second">Z</span></button>
+                        <button attr=left class="left-num3"><span class="ru">Ч</span><span class="second">X</span></button>
+                        <button attr=left class="left-num4"><span class="ru">С</span><span class="second">C</span></button>
+                        <button attr=left class="left-num5"><span class="ru">М</span><span class="second">V</span></button>
+                        <button attr=left class="left-num6"><span class="ru">И</span><span class="second">B</span></button>
+                        <button attr=left class="left-num7"><span class="ru">Т</span><span class="second">N</span></button>
+                        <button attr=left class="left-num8"><span class="ru">Ь</span><span class="second">M</span></button>
+                        <button attr=left class="left-num9"><span class="ru">Б</span><span class="second">,<</span></button>
+                        <button attr=left class="left-num10"><span class="ru">Ю</span><span class="second">>.</span></button>
+                        <button attr=left class="left-num11"><span class="ru">.</span><span class="second">/?</span></button>
+                        <button attr=left class="left-num12 SHIFT">SHIFT</button>
+                    </div>
+                    <div class="mainKeyBoard-rowLeft_six">
+                        <button attr=left class="left-num1 CTRL">CTRL</button>
+                        <button attr=left class="left-num2-RU">RU</button>
+                        <button attr=left class="left-num3 ALT">ALT</button>
+                        <button attr=left class="left-num4 SPACE ">&mdash;</button>
+                        <button attr=left class="left-num5 ALT">ALT</button>
+                        <button attr=left class="left-num6-EN">EN</button>
+                        <button attr=left class="left-num7 PR">Pr</button>
+                        <button attr=left class="left-num8 CTRL">CTRL</button>
+                    </div>
+                </div>
+                <div class="mainKeyBoard-rowRigth">
+                    <div class="mainKeyBoard-rowRigth_one">
+                        <button attr=rigth class="rigth-num1">PrtSc</button>
+                        <button attr=rigth class="rigth-num2">ScrLk</button>
+                        <button attr=rigth class="rigth-num3">Pause</button>
+                       
+                    </div>
+                    <div class="mainKeyBoard-rowRigth_two">
+                        <button attr=rigth class="rigth-num1">Ins</button>
+                        <button attr=rigth class="rigth-num2">Home</button>
+                        <button attr=rigth class="rigth-num3">PgUp</button>
+                       
+                    </div>
+                    <div class="mainKeyBoard-rowRigth_three">
+                        <button attr=rigth class="rigth-num1">Del</button>
+                        <button attr=rigth class="rigth-num2">End</button>
+                        <button attr=rigth class="rigth-num3">PgDn</button>
+                       
+                    </div>
+                    <div class="mainKeyBoard-rowRigth_four">
+                        <button attr=rigth class="rigth-num1">&#9650</button>
+                        
+                    </div>
+                    <div class="mainKeyBoard-rowRigth_five">
+                        <button attr=rigth class="rigth-num1">&#9668;</button>
+                        <button attr=rigth class="rigth-num2">&#9660;</button>
+                        <button attr=rigth class="rigth-num3">&#9658;</button>
+                    
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../6 Экранная клавиатура на JavaScript/js.js"></script>
+</html>
